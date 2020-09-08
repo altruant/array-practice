@@ -47,15 +47,11 @@ console.log(reverse(input))
 
 // Put your answer below -------------------------
 
+let arr = [ 0, 1, '', undefined, false, 2, undefined, null, , 3, NaN ];
 
+let filterArr = arr.filter(Boolean);
 
-
-
-
-
-
-
-
+console.log(arr, "->", filterArr)
 // -----------------------------------------------
 
 // ---------------------
