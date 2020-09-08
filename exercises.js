@@ -30,14 +30,14 @@ console.log(onlySunshine("sunshine", 3));
 
 // Put your answer below -------------------------
 
+let input = ["As", "I", "walk", "through", "the", "valley"];
 
+function reverse(arr) {
+ const output = arr.reverse();
+ return output;
+}
 
-
-
-
-
-
-
+console.log(reverse(input))
 
 // -----------------------------------------------
 
