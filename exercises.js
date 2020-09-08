@@ -99,15 +99,32 @@ console.log(uniqueArr(start));
 
 // ---------------------
 // Define a function that takes two arrays and returns true if they have identical values (order does not matter), it should return false otherwise
-// [1,2,3,4] and [1,2,3,4] should return true
-// [1,2,3,4,5] and [1,2,3,4] should return false
-// [1,2,3,4] and [1,2,3,4,4] should return false
-// [1,2,3,4] and [1,4,3,2] should return true
+let arr1 = [1,2,3,4]
+let arr2 = [1,2,3,4] // match(arr1, arr2)
+let arr3 = [1,2,3,4,5]
+let arr4 = [1,2,3,4] // match(arr3, arr4) should return false
+let arr5 = [1,2,3,4]
+let arr6 = [1,2,3,4,4] // match(arr5, arr6) should return false
+let arr7 = [1,2,3,4]
+let arr8 = [1,2,3,5] // match(arr7, arr8) should return true
 // ---------------------
 
 // Put your answer below -------------------------
+function match(array1, array2){
+  if(array1.length !== array2.length) {
+    return false
+  } else if (array1.sort().every(function(value, index) {return value === array2.sort()[index]})) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 
+console.log(match(arr1, arr2));
+console.log(match(arr3, arr4));
+console.log(match(arr5, arr6));
+console.log(match(arr7, arr8));
 
 
 
