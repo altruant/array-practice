@@ -106,7 +106,7 @@ let arr4 = [1,2,3,4] // match(arr3, arr4) should return false
 let arr5 = [1,2,3,4]
 let arr6 = [1,2,3,4,4] // match(arr5, arr6) should return false
 let arr7 = [1,2,3,4]
-let arr8 = [1,2,3,5] // match(arr7, arr8) should return true
+let arr8 = [1,2,3,4] // match(arr7, arr8) should return true
 // ---------------------
 
 // Put your answer below -------------------------
