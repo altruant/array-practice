@@ -56,19 +56,19 @@ console.log(arr, "->", filterArr)
 
 // ---------------------
 // Define a function that takes an array of nested arrays and returns an object composed of propeties equal to each nested array
-// const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
+const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
 // returns { name: 'Charlie', color: 'brown', age: 10 };
 // ---------------------
 
 // Put your answer below -------------------------
-
-
-
-
-
-
-
-
+function nesting(arr) {
+  let obj = {}
+  arr.forEach(function(item){
+    obj[item[0]] = item[1];
+  });
+  return obj;
+}
+console.log(nesting(myArray));
 
 
 // -----------------------------------------------
@@ -80,9 +80,15 @@ console.log(arr, "->", filterArr)
 
 // Put your answer below -------------------------
 
+start = [1,2,3,4,5,4,3]
 
+function uniqueArr(arr) {
+  uniqueSet = new Set(arr);
+  const backSet = [...uniqueSet];
+  return backSet;
+}
 
-
+console.log(uniqueArr(start));
 
 
 
