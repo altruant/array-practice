@@ -7,8 +7,15 @@
 
 
 
+function onlySunshine(str, i) {
+  let output = []
+  for (j = 0; j < i; j++) {
+    output[j] = str
+  }
+  return output;
+}
 
-
+console.log(onlySunshine("sunshine", 3));
 
 
 
